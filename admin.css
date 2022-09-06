@@ -1,0 +1,28 @@
+.welcome {
+  margin-right: 2.5rem;
+}
+.section-wrapper {
+  margin-top: 2% !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+.updateBtn,
+.deleteBtn {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: rgb(212, 134, 134);
+  cursor: pointer !important;
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+.updateBtn {
+  background-color: rgb(113, 172, 113);
+}
+.deleteBtn:hover {
+  background-color: rgb(181, 65, 65);
+}
+.updateBtn:hover {
+  background-color: rgb(75, 134, 23);
+}

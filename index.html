@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Home</title>
+  </head>
+  <body class="style-body">
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title login">Sign In</div>
+        <div class="title signup">Cust. Sign Up</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked />
+          <input type="radio" name="slide" id="signup" />
+          <label for="login" class="slide login headerLogInBTN">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <!-- --------------SignIN Form------------ -->
+        <div class="form-inner">
+          <form action="#" class="login" onsubmit="return false">
+            <div class="field">
+              <input
+                class="signIn-input"
+                type="text"
+                placeholder="Email Address"
+                id="signInEMail"
+              />
+            </div>
+            <div class="field">
+              <input
+                class="signIn-input"
+                type="password"
+                placeholder="Password"
+                id="signInPassword"
+              />
+            </div>
+            <div class="pass-link">
+              <a href="#">Forgot password?</a>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login" id="signInBtn" />
+            </div>
+            <div class="signup-link">
+              Not a member? <a href="#">Signup now</a>
+            </div>
+          </form>
+          <!-- --------------SignUp Form------------ -->
+          <form id="signup" onsubmit="return false">
+            <div class="field">
+              <input
+                class="signUp-input"
+                type="text"
+                placeholder="Full Name"
+                id="signUpFullName"
+              />
+            </div>
+            <div class="field">
+              <input
+                class="signUp-input"
+                type="text"
+                placeholder="Email Address"
+                id="signUpEMail"
+              />
+            </div>
+            <div class="field">
+              <input
+                class="signUp-input"
+                type="password"
+                placeholder="Password"
+                id="signUpPassword"
+              />
+            </div>
+            <div class="field">
+              <input
+                class="signUp-input"
+                type="password"
+                placeholder="Confirm password"
+                id="signUpConfirmPassword"
+              />
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup" id="signUpBtn" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
